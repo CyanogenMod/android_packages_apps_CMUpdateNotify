@@ -1,0 +1,7 @@
+gen/*
+bin/*
+.project
+.classpath
+.settings/*
+proguard.cfg
+default.properties

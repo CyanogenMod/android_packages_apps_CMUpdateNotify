@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:padding="10dip">
+
+    <TextView android:text="@string/txt_main_description"
+        android:id="@+id/TextView01" android:textColor="#FFFFFF"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <TextView android:text="@string/txt_main_stable" android:id="@+id/TextView01"
+        android:textColor="#FFFFFF" android:textStyle="bold"
+        android:paddingTop="20dip" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:paddingTop="10dip">
+        <Button android:text="@string/txt_register" android:id="@+id/btn_register"
+            android:enabled="false" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+        <Button android:text="@string/txt_unregister" android:id="@+id/btn_unregister"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:enabled="false"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
