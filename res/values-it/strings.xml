@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">Notifiche Aggiornamenti CyanogenMod</string>
+    <string name="txt_register">Connetti</string>
+    <string name="txt_unregister">Disconnetti</string>
+    <string name="unknown">\?</string>
+    
+    <!-- Notification -->
+    <string name="txt_notif_ticker">Aggiornamento CyanogenMod Disponibile!</string>
+    <string name="txt_notif_title">Aggiornamento Disponibile</string>
+    <string name="txt_notif_long">È disponibile un aggiornamento CyanogenMod!</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">Notifiche Aggiornamenti CyanogenMod</string>
+    <string name="txt_registration_success">Connessione Riuscita</string>
+    <string name="txt_unregistration_success">Disconnessione Riuscita</string>
+    <string name="txt_registering">Connessione in corso... Attendere Prego</string>
+    <string name="txt_unregistering">Disconnessione in corso... Attendere Prego</string>
+    <string name="txt_main_description">Per attivare le notifiche push per le nuove versioni devi
+        aver prima connesso il tuo dispositivo ai server degli aggiornamenti.</string>
+    <string name="txt_main_stable">Versioni stabili</string>
+    
+    <string name="txt_main_nightly">Nightly Builds</string>
+    <string name="txt_main_license">È richiesta una licenza ROM Manager Premium per attivare questa funzione!</string>
+    
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">Informazioni aggiornamento</string>
+    <string name="txt_download_old_version">Vecchia Versione</string>
+    <string name="txt_download_new_version">Nuova Versione</string>
+    <string name="txt_download_download">Download</string>
+</resources>
