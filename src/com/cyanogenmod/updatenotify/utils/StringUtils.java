@@ -11,8 +11,7 @@ public class StringUtils {
     }
     
     public static String getModVersion() {
-        return "CyanogenMod-6-07121986-NIGHTLY-N1";
-        //return SystemProperties.get("ro.modversion");
+        return SystemProperties.get("ro.modversion");
     }
     
     public static boolean isRunningNightly() {
