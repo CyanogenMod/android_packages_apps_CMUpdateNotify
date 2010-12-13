@@ -56,14 +56,14 @@ public class MainActivity extends Activity {
         SharedPreferences.Editor editor = settings.edit();
         String buildType = settings.getString(Preferences.BUILDTYPE_KEY, null);
         
-        if (buildType.equals("nightly") && !StringUtils.isRunningNightly()) {
+        if (buildType != null && buildType.equals("nightly") && !StringUtils.isRunningNightly()) {
             Log.d(TAG, "Build Changed -- Removing settings.");
             editor.remove(Preferences.BUILDTYPE_KEY);
             editor.remove(Preferences.DEVICEREGISTRATION_KEY);
             editor.commit();
         }
         
-        if (buildType.equals("stable") && StringUtils.isRunningNightly()) {
+        if (buildType != null && buildType.equals("stable") && StringUtils.isRunningNightly()) {
             Log.d(TAG, "Build Changed -- Removing settings.");
             editor.remove(Preferences.BUILDTYPE_KEY);
             editor.remove(Preferences.DEVICEREGISTRATION_KEY);
