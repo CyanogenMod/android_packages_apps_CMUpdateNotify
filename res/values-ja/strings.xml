@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">CyanogenMod更新通知</string>
+    <string name="txt_register">登録</string>
+    <string name="txt_unregister">登録解除</string>
+    <string name="unknown">\?</string>
+    
+    <!-- Notification -->
+    <string name="txt_notif_ticker">CyanogenMod更新</string>
+    <string name="txt_notif_title">更新があります</string>
+    <string name="txt_notif_long">CyanogenModの更新が利用できます！</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">CyanogenMod更新通知</string>
+    <string name="txt_registration_success">登録は成功しました</string>
+    <string name="txt_unregistration_success">登録解除は成功しました</string>
+    <string name="txt_registering">登録中... お待ちください</string>
+    <string name="txt_unregistering">登録解除中... お待ちください</string>
+    <string name="txt_main_description">新バージョンのプッシュ通知を受け取るには、あなたの端末を更新サーバに登録する必要があります。</string>
+    <string name="txt_main_stable">安定版リリース</string>
+    
+    <string name="txt_main_nightly">Nightlyビルド</string>
+    <string name="txt_main_license">この機能を有効にするにはROM Manager Premiumのライセンスが必要です！</string>
+    
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">更新情報</string>
+    <string name="txt_download_old_version">旧バージョン</string>
+    <string name="txt_download_new_version">新バージョン</string>
+    <string name="txt_download_download">ダウンロード</string>
+</resources>
