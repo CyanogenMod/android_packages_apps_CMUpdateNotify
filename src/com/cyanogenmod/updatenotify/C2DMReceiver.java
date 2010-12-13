@@ -50,8 +50,12 @@ public class C2DMReceiver extends C2DMBaseReceiver {
         Log.d(TAG, "newVersion = " + newVersion);
         Log.d(TAG, "url = " + url);
 
-        if (StringUtils.compareModVersions(newVersion, oldVersion)) {
+        if (StringUtils.isNightly(newVersion)) {
             sendNotification(context, oldVersion, newVersion, url);
+        } else {
+            if (StringUtils.compareModVersions(newVersion, oldVersion)) {
+                sendNotification(context, oldVersion, newVersion, url);
+            }
         }
     }
 

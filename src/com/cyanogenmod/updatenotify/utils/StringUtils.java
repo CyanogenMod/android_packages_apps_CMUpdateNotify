@@ -11,7 +11,12 @@ public class StringUtils {
     }
     
     public static String getModVersion() {
-        return SystemProperties.get("ro.modversion");
+        return "CyanogenMod-6-07121986-NIGHTLY-N1";
+        //return SystemProperties.get("ro.modversion");
+    }
+    
+    public static boolean isRunningNightly() {
+        return isNightly(getModVersion());
     }
     
     public static boolean compareModVersions(String newVersion, String oldVersion) {
@@ -45,5 +50,21 @@ public class StringUtils {
         }
 
         return newer;
+    }
+    
+    public static boolean isNightly(String modver) {
+        boolean nightly = false;
+        Pattern pattern = Pattern.compile("CyanogenMod-\\d-(\\d+)-NIGHTLY");
+        Matcher match;
+        
+        match = pattern.matcher(modver);
+        
+        while (match.find()) {
+            if (match.groupCount() == 1) {
+                nightly = true;
+            }
+        }
+        
+        return nightly;
     }
 }

@@ -8,13 +8,16 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.cyanogenmod.updatenotify.utils.DeviceRegistrar;
+import com.cyanogenmod.updatenotify.utils.NightlyLicense;
 import com.cyanogenmod.updatenotify.utils.Preferences;
+import com.cyanogenmod.updatenotify.utils.StringUtils;
 import com.google.android.c2dm.C2DMessaging;
 
 public class MainActivity extends Activity {
@@ -23,11 +26,17 @@ public class MainActivity extends Activity {
     private Button mRegisterButton;
     private Button mUnregisterButton;
     private ProgressDialog mProgressDialog;
+    
+    private static final String TAG = "CMUpdateNotify-MainActivity";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        if (StringUtils.isRunningNightly()) {
+            setContentView(R.layout.main_nightly);
+        } else {
+            setContentView(R.layout.main_stable);
+        }
         setTitle(R.string.title_main);
 
         mRegisterButton = (Button) findViewById(R.id.btn_register);
@@ -35,10 +44,31 @@ public class MainActivity extends Activity {
 
         mUnregisterButton = (Button) findViewById(R.id.btn_unregister);
         mUnregisterButton.setOnClickListener(mOnUnregisterListener);
-
+        
+        checkBuildType();
         setupButtons();
 
         registerReceiver(mUpdateUIReceiver, new IntentFilter(UPDATE_UI_ACTION));
+    }
+    
+    private void checkBuildType() {
+        SharedPreferences settings = Preferences.get(this);
+        SharedPreferences.Editor editor = settings.edit();
+        String buildType = settings.getString(Preferences.BUILDTYPE_KEY, null);
+        
+        if (buildType.equals("nightly") && !StringUtils.isRunningNightly()) {
+            Log.d(TAG, "Build Changed -- Removing settings.");
+            editor.remove(Preferences.BUILDTYPE_KEY);
+            editor.remove(Preferences.DEVICEREGISTRATION_KEY);
+            editor.commit();
+        }
+        
+        if (buildType.equals("stable") && StringUtils.isRunningNightly()) {
+            Log.d(TAG, "Build Changed -- Removing settings.");
+            editor.remove(Preferences.BUILDTYPE_KEY);
+            editor.remove(Preferences.DEVICEREGISTRATION_KEY);
+            editor.commit();
+        }
     }
 
     private void setupButtons() {
@@ -50,6 +80,13 @@ public class MainActivity extends Activity {
         } else {
             mRegisterButton.setEnabled(false);
             mUnregisterButton.setEnabled(true);
+        }
+
+        NightlyLicense nl = new NightlyLicense(this);
+
+        if (StringUtils.isRunningNightly() && !nl.validLicense()) {
+            mRegisterButton.setEnabled(false);
+            mUnregisterButton.setEnabled(false);
         }
     }
 

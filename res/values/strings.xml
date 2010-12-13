@@ -21,6 +21,9 @@
         you must register your device with the update servers.</string>
     <string name="txt_main_stable">Stable Releases</string>
     
+    <string name="txt_main_nightly">Nightly Builds</string>
+    <string name="txt_main_license">A ROM Manager Premium license is required to enable this feature!</string>
+    
     <!--  Download Activity -->
     <string name="txt_download_update_info">Update Information</string>
     <string name="txt_download_old_version">Old Version</string>

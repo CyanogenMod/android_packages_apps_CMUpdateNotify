@@ -20,18 +20,26 @@ public class DeviceRegistrar {
     public static final String STATUS_EXTRA = "Status";
     public static final int REGISTERED_STATUS = 1;
     public static final int UNREGISTERED_STATUS = 2;
-    
+
     private static final String TAG = "CMUpdateNotify-DeviceRegistrar";
 
     public static void registerWithServer(final Context context, final String deviceRegistrationID) {
         new Thread(new Runnable() {
             public void run() {
+                String buildType = null;
                 Intent updateUIIntent = new Intent(MainActivity.UPDATE_UI_ACTION);
+                
+                if (StringUtils.isRunningNightly()) {
+                    buildType = "nightly";
+                } else {
+                    buildType = "stable";
+                }
 
                 try {
                     HttpResponse res = makeRegisterRequest(context, deviceRegistrationID);
                     if (res.getStatusLine().getStatusCode() == 200) {
                         saveDeviceRegistration(context, deviceRegistrationID);
+                        saveBuildType(context, buildType);
                         updateUIIntent.putExtra(STATUS_EXTRA, REGISTERED_STATUS);
                         context.sendBroadcast(updateUIIntent);
                     } else {
@@ -53,6 +61,7 @@ public class DeviceRegistrar {
                     HttpResponse res = makeUnregisterRequest(context, deviceRegistrationID);
                     if (res.getStatusLine().getStatusCode() == 200) {
                         removeDeviceRegistration(context);
+                        removeBuildType(context);
                         updateUIIntent.putExtra(STATUS_EXTRA, UNREGISTERED_STATUS);
                         context.sendBroadcast(updateUIIntent);
                     } else {
@@ -72,7 +81,7 @@ public class DeviceRegistrar {
 
         Log.d(TAG, "Saved deviceRegistrationID=" + deviceRegistrationID);
     }
-
+    
     private static void removeDeviceRegistration(Context context) {
         SharedPreferences.Editor editor = Preferences.get(context).edit();
         editor.remove(Preferences.DEVICEREGISTRATION_KEY);
@@ -80,11 +89,35 @@ public class DeviceRegistrar {
 
         Log.d(TAG, "Removed deviceRegistrationID");
     }
+    
+    private static void saveBuildType(Context context, String buildType) {
+        SharedPreferences.Editor editor = Preferences.get(context).edit();
+        editor.putString(Preferences.BUILDTYPE_KEY, buildType);
+        editor.commit();
+
+        Log.d(TAG, "Saved buildType=" + buildType);
+    }
+    
+    private static void removeBuildType(Context context) {
+        SharedPreferences.Editor editor = Preferences.get(context).edit();
+        editor.remove(Preferences.BUILDTYPE_KEY);
+        editor.commit();
+
+        Log.d(TAG, "Removed buildType");
+    }
+    
 
     private static HttpResponse makeRegisterRequest(Context context, String deviceRegistrationID) throws Exception {
         List<NameValuePair> params = new ArrayList<NameValuePair>(4);
         params.add(new BasicNameValuePair("deviceRegistrationId", deviceRegistrationID));
-        params.add(new BasicNameValuePair("stable", "Y"));
+
+        if (StringUtils.isRunningNightly()) {
+            params.add(new BasicNameValuePair("stable", "N"));
+            params.add(new BasicNameValuePair("nightly", "Y"));
+        } else {
+            params.add(new BasicNameValuePair("stable", "Y"));
+            params.add(new BasicNameValuePair("nightly", "N"));
+        }
         params.add(new BasicNameValuePair("device", StringUtils.getDevice()));
 
         String deviceId = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);
