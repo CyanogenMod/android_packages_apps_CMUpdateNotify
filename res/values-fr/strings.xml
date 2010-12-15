@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">Notifications de mise à jour de CyanogenMod</string>
+    <string name="txt_register">S\'inscrire</string>
+    <string name="txt_unregister">Se désinscrire</string>
+    <string name="unknown">\?</string>
+
+    <!-- Notification -->
+    <string name="txt_notif_ticker">Mise à jour de CyanogenMod disponible</string>
+    <string name="txt_notif_title">Mise à jour disponible</string>
+    <string name="txt_notif_long">Une mise à jour de CyanogenMod est disponible !</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">Notifications de mise à jour de CyanogenMod</string>
+    <string name="txt_registration_success">Enregistrement réussi</string>
+    <string name="txt_unregistration_success">Désinscription réussie</string>
+    <string name="txt_registering">Enregistrement... Veuillez patienter</string>
+    <string name="txt_unregistering">Désinscription... Veuillez patienter</string>
+    <string name="txt_main_description">Afin d\'activer les notifications push lors de la sortie de nouvelles versions,
+vous devez enregistrer votre appareil auprès des serveurs de mise à jour.</string>
+    <string name="txt_main_stable">Versions stables</string>
+
+    <string name="txt_main_nightly">Versions nightly</string>
+    <string name="txt_main_license">Une license Premium de ROM Manager est nécessaire pour activer cette fonctionnalité !</string>
+
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">Informations de la mise à jour</string>
+    <string name="txt_download_old_version">Ancienne version</string>
+    <string name="txt_download_new_version">Nouvelle version</string>
+    <string name="txt_download_download">Télécharger</string>
+</resources>
