@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">CyanogenMod 업데이트 알림</string>
+    <string name="txt_register">등록</string>
+    <string name="txt_unregister">등록 해제</string>
+    <string name="unknown">\?</string>
+    
+    <!-- Notification -->
+    <string name="txt_notif_ticker">CyanogenMod 업데이트 가능.</string>
+    <string name="txt_notif_title">업데이트 가능</string>
+    <string name="txt_notif_long">CyanogenMod의 업데이트가 있습니다.</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">CyanogenMod 업데이트 알림</string>
+    <string name="txt_registration_success">등록 성공</string>
+    <string name="txt_unregistration_success">등록 해제 성공</string>
+    <string name="txt_registering">등록하는 중입니다.. 잠시만 기다려 주세요.</string>
+    <string name="txt_unregistering">등록을 해제하는 중입니다. 잠시만 기다려 주세요.</string>
+    <string name="txt_main_description">새로운 버전에 대한 푸시 알림을 사용하기 위해서는 휴대전화를 업데이트 서버에 등록해야 합니다.</string>
+    <string name="txt_main_stable">안정 버전</string>
+    
+    <string name="txt_main_nightly">Nightly 버전</string>
+    <string name="txt_main_license">이 기능을 사용하기 위해서는 ROM Manager의 프리미엄 라이센스가 필요합니다.</string>
+    
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">업데이트 정보</string>
+    <string name="txt_download_old_version">기존 버전</string>
+    <string name="txt_download_new_version">새 버전</string>
+    <string name="txt_download_download">다운로드</string>
+</resources>
