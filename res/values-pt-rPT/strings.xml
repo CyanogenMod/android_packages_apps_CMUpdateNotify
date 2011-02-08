@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">Notificações de Actualização da CyanogenMod</string>
+    <string name="txt_register">Registar</string>
+    <string name="txt_unregister">Anular Registo</string>
+    <string name="unknown">\?</string>
+
+    <!-- Notification -->
+    <string name="txt_notif_ticker">Actualização da CyanogenMod Disponível</string>
+    <string name="txt_notif_title">Actualização Disponível</string>
+    <string name="txt_notif_long">Uma actualização da CyanogenMod está disponível!</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">Notificações de Actualização da CyanogenMod</string>
+    <string name="txt_registration_success">Registo Concluído</string>
+    <string name="txt_unregistration_succes">Anulação do Registo Concluído</string>
+    <string name="txt_registering">A Registar... Por favor Aguarde</string>
+    <string name="txt_unregistering">A Anular o Registo... Por favor Aguarde</string>
+    <string name="txt_main_description">Para activar as notificações Push de novas versões,
+        tem de registar o seu dispositivo nos servidores de actualização.</string>
+    <string name="txt_main_stable">Stable Builds</string>
+
+    <string name="txt_main_nightly">Nightly Builds</string>
+    <string name="txt_main_license">É necessária uma licença do ROM Manager Premium para activar esta funcionalidade!</string>
+
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">Actualizar Informação</string>
+    <string name="txt_download_old_version">Versão Antiga</string>
+    <string name="txt_download_new_version">Nova Versão</string>
+    <string name="txt_download_download">Transferir</string>
+</resources>
