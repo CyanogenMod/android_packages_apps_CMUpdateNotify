@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--  Global -->
+  <string name="app_name">CyanogenMod Oppdateringsmelding</string>
+  <string name="txt_register">Registrer</string>
+  <string name="txt_unregister">Avregistrer</string>
+
+  <!-- Notification -->
+  <string name="txt_notif_ticker">CyanogenMod-oppdatering tilgjengelig</string>
+  <string name="txt_notif_title">Oppdatering tilgjengelig</string>
+  <string name="txt_notif_long">En oppdatering til CyanogenMod er tilgjengelig</string>
+
+  <!-- Main Activity -->
+  <string name="title_main">CyanogenMod oppdateringsmeldinger</string>
+  <string name="txt_registration_success">Registrering Vellykket</string>
+  <string name="txt_unregistration_success">Avregistrering Vellykket</string>
+  <string name="txt_registering">Registrerer... Vennligst vent</string>
+  <string name="txt_unregistering">Avregistrerer.. Vennligst vent</string>
+  <string name="txt_main_description">For å aktivere meldinger om nye versjone må du registrere din enhet opp mot oppdateringserveren</string>
+  <string name="txt_main_stable">Stabile utgivelser</string>
+  <string name="txt_main_nightly">Nattlige utgivelser</string>
+  <string name="txt_main_license">Denne funksjonen krever en ROM Manager Premium-lisens!</string>
+
+  <!--  Download Activity -->
+  <string name="txt_download_update_info">Oppdateringsinformasjon</string>
+  <string name="txt_download_old_version">Gammel versjon</string>
+  <string name="txt_download_new_version">Ny versjon</string>
+  <string name="txt_download_download">Last ned</string>
+</resources>
