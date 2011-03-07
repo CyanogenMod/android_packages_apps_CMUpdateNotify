@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--  Global -->
-    <string name="app_name">CyanogenMod Update Notifications</string>
-    <string name="txt_register">Register</string>
-    <string name="txt_unregister">Unregister</string>
-    <string name="unknown">\?</string>
+    <string name="app_name">הודעות עדכון של  CyanogenMod</string>
+  <string name="txt_register">הירשם</string>
+  <string name="txt_unregister">בטל רישום</string>
+  <string name="unknown">\?</string>
     
     <!-- Notification -->
-    <string name="txt_notif_ticker">CyanogenMod Update Available</string>
-    <string name="txt_notif_title">Update Available</string>
-    <string name="txt_notif_long">A CyanogenMod update is available!</string>
+     <string name="txt_notif_ticker">קיים עדכון ל CyanogenMod</string>
+  <string name="txt_notif_title">עדכון זמין</string>
+  <string name="txt_notif_long">קיים עדכון ל CyanogenMod!</string>
 
     <!-- Main Activity -->
-    <string name="title_main">CyanogenMod Update Notifications</string>
-    <string name="txt_registration_success">Registration Successful</string>
-    <string name="txt_unregistration_success">Unregistration Successful</string>
-    <string name="txt_registering">Registering... Please Wait</string>
-    <string name="txt_unregistering">Unregistering... Please Wait</string>
-    <string name="txt_main_description">To enable push notifications of new versions,
-        you must register your device with the update servers.</string>
-    <string name="txt_main_stable">Stable Releases</string>
-    
-    <string name="txt_main_nightly">Nightly Builds</string>
-    <string name="txt_main_license">A ROM Manager Premium license is required to enable this feature!</string>
+   <string name="title_main">הודעות עדכון של CyanogenMod</string>
+  <string name="txt_registration_success">הרישום עבר בהצלחה</string>
+  <string name="txt_unregistration_success">ביטול הרישום עבר בהצלחה</string>
+  <string name="txt_registering">נרשם... אנא המתן</string>
+  <string name="txt_unregistering">מבטל רישום... אנא המתן</string>
+  <string name="txt_main_description">כדי לאפשר דיווחים על גירסאות חדשות,
+עליך לרשום את המכשיר עם שרתי עדכון.</string>
+  <string name="txt_main_stable">גרסאות יציבות</string>
+  <string name="txt_main_nightly">גרסאות ליליות</string>
+  <string name="txt_main_license">דרוש רשיון של ROM Manager Premium כדי להפוך תכונה זו לזמינה!</string>
     
     <!--  Download Activity -->
-    <string name="txt_download_update_info">Update Information</string>
-    <string name="txt_download_old_version">Old Version</string>
-    <string name="txt_download_new_version">New Version</string>
-    <string name="txt_download_download">Download</string>
+    <string name="txt_download_update_info">פרטי עדכון</string>
+  <string name="txt_download_old_version">גרסה ישנה</string>
+  <string name="txt_download_new_version">גרסה חדשה</string>
+  <string name="txt_download_download">הורדה</string>
 </resources>
