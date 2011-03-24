@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--  Global -->
-    <string name="app_name">Уведомления обновлений CyanogenMod</string>
+    <string name="app_name">Уведомления об обновлениях CyanogenMod</string>
     <string name="txt_register">Регистрация</string>
     <string name="txt_unregister">Отменить регистрацию</string>
     <string name="unknown">\?</string>
@@ -12,16 +12,17 @@
     <string name="txt_notif_long">Доступно обновление CyanogenMod!</string>
 
     <!-- Main Activity -->
-    <string name="title_main">Уведомления обновлений CyanogenMod</string>
+    <string name="title_main">Уведомления об обновлениях CyanogenMod</string>
     <string name="txt_registration_success">Регистрация прошла успешно</string>
     <string name="txt_unregistration_success">Успешная отмена регистрация</string>
     <string name="txt_registering">Регистрация... Пожалуйста, подождите</string>
     <string name="txt_unregistering">Отмена регистрации... Пожалуйста, подождите</string>
-    <string name="txt_main_description">Для получения уведомлений о новых версиях, вы должны зарегестрировать ваше устройство на сервере обновлений.</string>
+    <string name="txt_main_description">Для получения уведомлений о новых версиях вы должны
+    зарегистрировать ваше устройство на сервере обновлений.</string>
     <string name="txt_main_stable">Стабильные релизы</string>
     
     <string name="txt_main_nightly">Ночные сборки</string>
-    <string name="txt_main_license">Требуется лицензия ROM Manager Premium для включения этой функции!</string>
+    <string name="txt_main_license">Для включения этой функции требуется лицензия ROM Manager Premium!</string>
     
     <!--  Download Activity -->
     <string name="txt_download_update_info">Информация об обновлении</string>
