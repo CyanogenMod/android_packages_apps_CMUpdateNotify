@@ -13,8 +13,8 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.params.HttpProtocolParams;
 
 public class RegistrationClient {
-    static final String REGISTER_URL = "http://mirror1.kanged.net/c2dm/register.php";
-    static final String UNREGISTER_URL = "http://mirror1.kanged.net/c2dm/unregister.php";
+    static final String REGISTER_URL = "http://www.cyanogenmod.com/c2dm/register.php";
+    static final String UNREGISTER_URL = "http://www.cyanogenmod.com/c2dm/unregister.php";
 
     public HttpResponse registerRequest(List<NameValuePair> params) throws Exception {
         final HttpParams httpparams = createParamsForPosting();
@@ -25,7 +25,7 @@ public class RegistrationClient {
         HttpResponse res = httpclient.execute(httppost);
         return res;
     }
-    
+
     public HttpResponse unregisterRequest(List<NameValuePair> params) throws Exception {
         final HttpParams httpparams = createParamsForPosting();
         DefaultHttpClient httpclient = new DefaultHttpClient();

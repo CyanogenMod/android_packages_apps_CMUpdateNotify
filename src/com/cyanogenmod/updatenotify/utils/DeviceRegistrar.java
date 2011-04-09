@@ -20,6 +20,8 @@ public class DeviceRegistrar {
     public static final String STATUS_EXTRA = "Status";
     public static final int REGISTERED_STATUS = 1;
     public static final int UNREGISTERED_STATUS = 2;
+    public static final int REGISTERED_FAILURE_STATUS = 3;
+    public static final int UNREGISTERED_FAILURE_STATUS = 4;
 
     private static final String TAG = "CMUpdateNotify-DeviceRegistrar";
 
@@ -28,7 +30,7 @@ public class DeviceRegistrar {
             public void run() {
                 String buildType = null;
                 Intent updateUIIntent = new Intent(MainActivity.UPDATE_UI_ACTION);
-                
+
                 if (StringUtils.isRunningNightly()) {
                     buildType = "nightly";
                 } else {
@@ -44,9 +46,13 @@ public class DeviceRegistrar {
                         context.sendBroadcast(updateUIIntent);
                     } else {
                         Log.d(TAG, "Registration Error: " + String.valueOf(res.getStatusLine().getStatusCode()));
+                        updateUIIntent.putExtra(STATUS_EXTRA, REGISTERED_FAILURE_STATUS);
+                        context.sendBroadcast(updateUIIntent);
                     }
                 } catch (Exception e) {
                     Log.d(TAG, "Exception", e);
+                    updateUIIntent.putExtra(STATUS_EXTRA, REGISTERED_FAILURE_STATUS);
+                    context.sendBroadcast(updateUIIntent);
                 }
             }
         }).start();
@@ -66,9 +72,13 @@ public class DeviceRegistrar {
                         context.sendBroadcast(updateUIIntent);
                     } else {
                         Log.d(TAG, "Unregistration Error: " + String.valueOf(res.getStatusLine().getStatusCode()));
+                        updateUIIntent.putExtra(STATUS_EXTRA, UNREGISTERED_FAILURE_STATUS);
+                        context.sendBroadcast(updateUIIntent);
                     }
                 } catch (Exception e) {
                     Log.d(TAG, "Exception", e);
+                    updateUIIntent.putExtra(STATUS_EXTRA, UNREGISTERED_FAILURE_STATUS);
+                    context.sendBroadcast(updateUIIntent);
                 }
             }
         }).start();

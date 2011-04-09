@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
     private Button mRegisterButton;
     private Button mUnregisterButton;
     private ProgressDialog mProgressDialog;
-    
+
     private static final String TAG = "CMUpdateNotify-MainActivity";
 
     @Override
@@ -44,25 +44,25 @@ public class MainActivity extends Activity {
 
         mUnregisterButton = (Button) findViewById(R.id.btn_unregister);
         mUnregisterButton.setOnClickListener(mOnUnregisterListener);
-        
+
         checkBuildType();
         setupButtons();
 
         registerReceiver(mUpdateUIReceiver, new IntentFilter(UPDATE_UI_ACTION));
     }
-    
+
     private void checkBuildType() {
         SharedPreferences settings = Preferences.get(this);
         SharedPreferences.Editor editor = settings.edit();
         String buildType = settings.getString(Preferences.BUILDTYPE_KEY, null);
-        
+
         if (buildType != null && buildType.equals("nightly") && !StringUtils.isRunningNightly()) {
             Log.d(TAG, "Build Changed -- Removing settings.");
             editor.remove(Preferences.BUILDTYPE_KEY);
             editor.remove(Preferences.DEVICEREGISTRATION_KEY);
             editor.commit();
         }
-        
+
         if (buildType != null && buildType.equals("stable") && StringUtils.isRunningNightly()) {
             Log.d(TAG, "Build Changed -- Removing settings.");
             editor.remove(Preferences.BUILDTYPE_KEY);
@@ -130,6 +130,18 @@ public class MainActivity extends Activity {
                 mRegisterButton.setEnabled(true);
                 mProgressDialog.dismiss();
                 Toast.makeText(getApplicationContext(), R.string.txt_unregistration_success, 10).show();
+            }
+
+            if (status == DeviceRegistrar.REGISTERED_FAILURE_STATUS) {
+                mRegisterButton.setEnabled(true);
+                mProgressDialog.dismiss();
+                Toast.makeText(getApplicationContext(), R.string.txt_registration_failure, 10).show();
+            }
+
+            if (status == DeviceRegistrar.UNREGISTERED_FAILURE_STATUS) {
+                mUnregisterButton.setEnabled(true);
+                mProgressDialog.dismiss();
+                Toast.makeText(getApplicationContext(), R.string.txt_unregistration_failure, 10).show();
             }
         }
     };

@@ -14,7 +14,9 @@
     <!-- Main Activity -->
     <string name="title_main">CyanogenMod Update Notifications</string>
     <string name="txt_registration_success">Registration Successful</string>
+    <string name="txt_registration_failure">Registration Failed</string>
     <string name="txt_unregistration_success">Unregistration Successful</string>
+    <string name="txt_unregistration_failure">Unregistration Failed</string>
     <string name="txt_registering">Registering... Please Wait</string>
     <string name="txt_unregistering">Unregistering... Please Wait</string>
     <string name="txt_main_description">To enable push notifications of new versions,
