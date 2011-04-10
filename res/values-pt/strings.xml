@@ -28,4 +28,6 @@
     <string name="txt_download_old_version">Versão Antiga</string>
     <string name="txt_download_new_version">Versão Nova</string>
     <string name="txt_download_download">Download</string>
+    <string name="txt_registration_failure">Falha ao registrar</string>
+    <string name="txt_unregistration_failure">Falha ao desregistrar</string>
 </resources>
