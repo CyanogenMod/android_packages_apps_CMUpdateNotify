@@ -14,7 +14,9 @@
     <!-- Main Activity -->
     <string name="title_main">Notifiche Aggiornamenti CyanogenMod</string>
     <string name="txt_registration_success">Connessione Riuscita</string>
+    <string name="txt_registration_failure">Connessione Fallita</string>
     <string name="txt_unregistration_success">Disconnessione Riuscita</string>
+    <string name="txt_unregistration_failure">Disconnessione Fallita</string>
     <string name="txt_registering">Connessione in corso... Attendere Prego</string>
     <string name="txt_unregistering">Disconnessione in corso... Attendere Prego</string>
     <string name="txt_main_description">Per attivare le notifiche push per le nuove versioni devi
