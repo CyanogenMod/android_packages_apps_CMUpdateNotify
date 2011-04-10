@@ -14,7 +14,9 @@
     <!-- Main Activity -->
     <string name="title_main">Уведомления об обновлениях CyanogenMod</string>
     <string name="txt_registration_success">Регистрация прошла успешно</string>
+    <string name="txt_registration_failure">Не удалось зарегистрироваться</string>
     <string name="txt_unregistration_success">Успешная отмена регистрация</string>
+    <string name="txt_unregistration_failure">Ошибка отмены регистрации</string>
     <string name="txt_registering">Регистрация... Пожалуйста, подождите</string>
     <string name="txt_unregistering">Отмена регистрации... Пожалуйста, подождите</string>
     <string name="txt_main_description">Для получения уведомлений о новых версиях вы должны
