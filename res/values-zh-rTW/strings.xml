@@ -5,7 +5,7 @@
     <string name="txt_register">註冊</string>
     <string name="txt_unregister">取消註冊</string>
     <string name="unknown">\?</string>
-    
+
     <!-- Notification -->
     <string name="txt_notif_ticker">CyanogenMod 有可用的更新</string>
     <string name="txt_notif_title">有可用的更新</string>
@@ -14,15 +14,17 @@
     <!-- Main Activity -->
     <string name="title_main">CyanogenMod 更新通知</string>
     <string name="txt_registration_success">註冊成功</string>
+    <string name="txt_registration_failure">註冊失敗</string>
     <string name="txt_unregistration_success">成功取消註冊</string>
+    <string name="txt_unregistration_failure">取消註冊失敗</string>
     <string name="txt_registering">註冊中... 請稍候</string>
     <string name="txt_unregistering">取消註冊中... 請稍候</string>
     <string name="txt_main_description">要啟用新版本的推送通知，您必須在更新伺服器註冊您的裝置。</string>
     <string name="txt_main_stable">穩定／正式版</string>
-    
+
     <string name="txt_main_nightly">夜夜版本</string>
     <string name="txt_main_license">您需要安裝 ROM Manager Premium 授權來啟用此功能！</string>
-    
+
     <!--  Download Activity -->
     <string name="txt_download_update_info">更新資訊</string>
     <string name="txt_download_old_version">舊版本</string>
