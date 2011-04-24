@@ -8,13 +8,15 @@
     <string name="txt_notif_long">Доступне оновлення CyanogenMod!</string>
     <string name="title_main">Сповіщення про оновлення CyanogenMod</string>
     <string name="txt_registration_success">Успішна реєстрація</string>
+    <string name="txt_registration_failure">Не вдалося зареєструватися</string>
     <string name="txt_unregistration_success">Успішне скасування реєстрації</string>
+    <string name="txt_unregistration_failure">Не вдалося скасувати реєстрацію</string>
     <string name="txt_registering">Реєстрація\u2026 Зачекайте</string>
     <string name="txt_unregistering">Скасування реєстрації\u2026 Зачекайте</string>
     <string name="txt_main_description">Щоб отримувати сповіщення про нові версії необхідно зареєструвати пристрій на сервері оновлень.</string>
     <string name="txt_main_stable">Стабільні релізи</string>
     <string name="txt_main_nightly">Нічні збірки</string>
-    <string name="txt_main_license">Щоб увімкнути цю Функцію потрібна ліцензія на ROM Manager Premium!</string>
+    <string name="txt_main_license">Щоб увімкнути цю функцію потрібна ліцензія на ROM Manager Premium!</string>
     <string name="txt_download_update_info">Інформація про оновлення</string>
     <string name="txt_download_old_version">Стара версія</string>
     <string name="txt_download_new_version">Нова версія</string>
