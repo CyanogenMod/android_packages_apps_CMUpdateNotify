@@ -20,27 +20,34 @@ public class StringUtils {
     
     public static boolean compareModVersions(String newVersion, String oldVersion) {
         boolean newer = false;
-        Pattern pattern = Pattern.compile("CyanogenMod-(\\d.\\d.\\d)-");
+        Pattern pattern = Pattern.compile("CyanogenMod-(\\d.\\d.\\d)(.?\\d?)-");
         Matcher match;
 
         // Match  new version.
         match = pattern.matcher(newVersion);
         while (match.find()) {
-            if (match.groupCount() == 1) {
-                newVersion = match.group(1);
+            if (match.groupCount() == 2) {
+                newVersion = match.group(1).replace(".", "");
+                if (match.group(2).equals("")) {
+                    newVersion = newVersion + "0";
+                } else {
+                    newVersion = newVersion + match.group(2).replace(".", "");
+                }
             }
         }
 
         // Match old version
         match = pattern.matcher(oldVersion);
         while (match.find()) {
-            if (match.groupCount() == 1) {
-                oldVersion = match.group(1);
+            if (match.groupCount() == 2) {
+                oldVersion = match.group(1).replace(".", "");
+                if (match.group(2).equals("")) {
+                    oldVersion = oldVersion + "0";
+                } else {
+                    oldVersion = oldVersion + match.group(2).replace(".", "");
+                }
             }
         }
-
-        newVersion = newVersion.replace(".", "");
-        oldVersion = oldVersion.replace(".", "");
 
         if (Integer.valueOf(newVersion) > Integer.valueOf(oldVersion)) {
             newer = true;
