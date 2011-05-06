@@ -13,7 +13,9 @@
   <!-- Main Activity -->
   <string name="title_main">CyanogenMod Update-Benachrichtigungen</string>
   <string name="txt_registration_success">Erfolgreich registriert</string>
-  <string name="txt_unregistration_success">Erfolgrecih abgemeldet</string>
+  <string name="txt_registration_failure">Registrierung fehlgeschlagen</string>
+  <string name="txt_unregistration_success">Erfolgreich abgemeldet</string>
+  <string name="txt_unregistration_failure">Abmeldung fehlgeschlagen</string>
   <string name="txt_registering">Registrierung... Bitte warten</string>
   <string name="txt_unregistering">Abmeldung... Bitte warten</string>
   <string name="txt_main_description">Zum Einschalten der Push-Benachrichtigungen über neue Versionen
