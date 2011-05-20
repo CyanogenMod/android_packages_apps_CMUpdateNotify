@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">CyanogenMod Update Notificaties</string>
+    <string name="txt_register">Registreer</string>
+    <string name="txt_unregister">Verwijder registratie</string>
+    <string name="unknown">\?</string>
+    
+    <!-- Notification -->
+    <string name="txt_notif_ticker">CyanogenMod Update Beschikbaar</string>
+    <string name="txt_notif_title">Update Beschikbaar</string>
+    <string name="txt_notif_long">Er is een update voor CyanogenMod beschikbaar!</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">CyanogenMod Update Notificaties</string>
+    <string name="txt_registration_success">Registratie succesvol</string>
+    <string name="txt_registration_failure">Registratie mislukt</string>
+    <string name="txt_unregistration_success">Verwijderen van registratie gelukt</string>
+    <string name="txt_unregistration_failure">Verwijderen van registratie mislukt</string>
+    <string name="txt_registering">Registreren... Wachten a.u.b.</string>
+    <string name="txt_unregistering">Registratie verwijderen... Wachten a.u.b.</string>
+    <string name="txt_main_description">Om push notificaties voor nieuwe versies te ontvangen, 
+	dien je je toetsel te registreren bij de update servers.</string>
+    <string name="txt_main_stable">Stabiele versies</string>
+    
+    <string name="txt_main_nightly">Nightly Builds</string>
+    <string name="txt_main_license">Om update notificaties te ontvangen dien je een ROM Manager Premium licensie te hebben!</string>
+    
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">Update Informatie</string>
+    <string name="txt_download_old_version">Oude Versie</string>
+    <string name="txt_download_new_version">Nieuwe Versie</string>
+    <string name="txt_download_download">Download</string>
+</resources>
