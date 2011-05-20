@@ -19,8 +19,8 @@
     <string name="txt_unregistration_failure">Verwijderen van registratie mislukt</string>
     <string name="txt_registering">Registreren... Wachten a.u.b.</string>
     <string name="txt_unregistering">Registratie verwijderen... Wachten a.u.b.</string>
-    <string name="txt_main_description">Om push notificaties voor nieuwe versies te ontvangen,
-		dien je je toetsel te registreren bij de update servers.</string>
+    <string name="txt_main_description">Om push notificaties voor nieuwe versies te ontvangen, 
+	dien je je toetsel te registreren bij de update servers.</string>
     <string name="txt_main_stable">Stabiele versies</string>
     
     <string name="txt_main_nightly">Nightly Builds</string>
