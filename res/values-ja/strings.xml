@@ -14,7 +14,9 @@
     <!-- Main Activity -->
     <string name="title_main">CyanogenMod更新通知</string>
     <string name="txt_registration_success">登録は成功しました</string>
+    <string name="txt_registration_failure">登録に失敗しました</string>
     <string name="txt_unregistration_success">登録解除は成功しました</string>
+    <string name="txt_unregistration_failure">登録解除に失敗しました</string>
     <string name="txt_registering">登録中... お待ちください</string>
     <string name="txt_unregistering">登録解除中... お待ちください</string>
     <string name="txt_main_description">新バージョンのプッシュ通知を受け取るには、あなたの端末を更新サーバに登録する必要があります。</string>
