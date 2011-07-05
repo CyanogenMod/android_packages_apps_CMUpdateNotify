@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">CyanogenMod update upozornění</string>
+    <string name="txt_register">Registrovat</string>
+    <string name="txt_unregister">Odhlásit</string>
+    <string name="unknown">\?</string>
+    
+    <!-- Notification -->
+    <string name="txt_notif_ticker">CyanogenMod update dosputný</string>
+    <string name="txt_notif_title">Update dostupný</string>
+    <string name="txt_notif_long">CyanogenMod update je dostupný!</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">CyanogenMod update upozornění</string>
+    <string name="txt_registration_success">Registrace úspěšná</string>
+    <string name="txt_registration_failure">Registrace sehala</string>
+    <string name="txt_unregistration_success">Odhlášení úspěšné</string>
+    <string name="txt_unregistration_failure">Odhlášení sehlalo</string>
+    <string name="txt_registering">Registruji... prosím čekejte</string>
+    <string name="txt_unregistering">Odhlašuji... Prosím čekejte</string>
+    <string name="txt_main_description">Pro povolení push notifikací nových verzí
+        musíte registrovat Vaše zařízení na update serverech.</string>
+    <string name="txt_main_stable">Stabilní vydání</string>
+    
+    <string name="txt_main_nightly">Noční sestavení</string>
+    <string name="txt_main_license">ROM Manager Premium license je potřeba pro povolení této funkce!</string>
+    
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">Informace o updatu</string>
+    <string name="txt_download_old_version">Stará verze</string>
+    <string name="txt_download_new_version">Nová verze</string>
+    <string name="txt_download_download">Stáhnout</string>
+</resources>
