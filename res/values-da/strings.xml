@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">CyanogenMod Opdaterings Notifikationer</string>
+    <string name="txt_register">Registrer</string>
+    <string name="txt_unregister">Afregistrer</string>
+    <string name="unknown">\?</string>
+    
+    <!-- Notification -->
+    <string name="txt_notif_ticker">CyanogenMod Opdatering Tilgængelig</string>
+    <string name="txt_notif_title">Opdatering Tilgængelig</string>
+    <string name="txt_notif_long">En CyanogenMod opdatering er tilgængelig!</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">CyanogenMod Opdaterings Notifikationer</string>
+    <string name="txt_registration_success">Registrering Successfuld</string>
+    <string name="txt_registration_failure">Registrering Fejlede</string>
+    <string name="txt_unregistration_success">Afregistrering Successfuld</string>
+    <string name="txt_unregistration_failure">Afregistrering Fejlede</string>
+    <string name="txt_registering">Registrerer\u2026 Vent Venligst</string>
+    <string name="txt_unregistering">Afregistrerer\u2026 Vent Venligst</string>
+    <string name="txt_main_description">For at aktivere push notifikationer ved nye opdateringer,
+        skal du registrere din enhed på opdaterings serverne.</string>
+    <string name="txt_main_stable">Stabile Udgivelser</string>
+    
+    <string name="txt_main_nightly">Nightly Builds</string>
+    <string name="txt_main_license">En ROM Manager Premium licens er nødvendig for at aktivere denne funktion!</string>
+    
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">Opdaterings Information</string>
+    <string name="txt_download_old_version">Gammel Version</string>
+    <string name="txt_download_new_version">Ny Version</string>
+    <string name="txt_download_download">Download</string>
+</resources>
