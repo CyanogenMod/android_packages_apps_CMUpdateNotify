@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Uppdateringsaviseringar för CyanogenMod</string>
+    <string name="txt_register">Registrera</string>
+    <string name="txt_unregister">Avregistrera</string>
+    <string name="unknown">\?</string>
+
+    <string name="txt_notif_ticker">Uppdatering för CyanogenMod Tillgänglig</string>
+    <string name="txt_notif_title">Uppdatering Tillgänglig</string>
+    <string name="txt_notif_long">En CyanogenMod-uppdatering är tillgänglig!</string>
+
+    <string name="title_main">Uppdateringsaviseringar för CyanogenMod</string>
+    <string name="txt_registration_success">Registrering Lyckades</string>
+    <string name="txt_registration_failure">Registrering Misslyckades</string>
+    <string name="txt_unregistration_success">Avregistrering Lyckades</string>
+    <string name="txt_unregistration_failure">Avregistrering Misslyckades</string>
+    <string name="txt_registering">Registrerar\u2026 Var God Vänta</string>
+    <string name="txt_unregistering">Avregistrerar\u2026 Var God Vänta</string>
+    <string name="txt_main_description">För att registrera push-aviseringar av nya versioner,
+        behöver du registrera din enhet med uppdateringsservrarna.</string>
+    <string name="txt_main_stable">Stabila Utgåvor</string>
+    <string name="txt_main_nightly">Nightly Builds</string>
+    <string name="txt_main_license">En licens för ROM Manager Premium krävs för att aktivera denna funktion!</string>
+
+    <string name="txt_download_update_info">Uppdateringsinformation</string>
+    <string name="txt_download_old_version">Gammal Version</string>
+    <string name="txt_download_new_version">Ny Version</string>
+    <string name="txt_download_download">Ladda ner</string>
+</resources>
