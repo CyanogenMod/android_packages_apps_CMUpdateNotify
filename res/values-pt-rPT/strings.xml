@@ -14,7 +14,7 @@
     <!-- Main Activity -->
     <string name="title_main">Notificações de Actualização da CyanogenMod</string>
     <string name="txt_registration_success">Registo Concluído</string>
-    <string name="txt_unregistration_succes">Anulação do Registo Concluído</string>
+    <string name="txt_unregistration_success">Anulação do Registo Concluído</string>
     <string name="txt_registering">A Registar... Por favor Aguarde</string>
     <string name="txt_unregistering">A Anular o Registo... Por favor Aguarde</string>
     <string name="txt_main_description">Para activar as notificações Push de novas versões,
