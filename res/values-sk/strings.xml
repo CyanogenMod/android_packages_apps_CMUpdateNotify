@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">Upozornenia na Aktualizácie CyanogenMod</string>
+    <string name="txt_register">Registrovať</string>
+    <string name="txt_unregister">Odregistrovať</string>
+    <string name="unknown">\?</string>
+    <string name="txt_notif_ticker">Dostupná Aktualizácia CyanogenMod</string>
+    <string name="txt_notif_title">Aktualizácia Dostupná</string>
+    <string name="txt_notif_long">Aktualizácia CyanogenMod je dostupná!</string>
+    <string name="title_main">Upozornenia na Aktualizácie CyanogenMod</string>
+    <string name="txt_registration_success">Registrácia Úspešná</string>
+    <string name="txt_registration_failure">Registrácia Zlyhala</string>
+    <string name="txt_unregistration_success">Odregistrácia Úspešná</string>
+    <string name="txt_unregistration_failure">Odregistrácia Zlyhala</string>
+    <string name="txt_registering">Registrovanie\u2026 Čakajte Prosím</string>
+    <string name="txt_unregistering">Odregistrovanie\u2026 Čakajte Prosím</string>
+    <string name="txt_main_description">Pre povolenie notifikácií o nových verziách,
+        musíte registrovať Vaše zariadenie s aktualizačným serverom.</string>
+    <string name="txt_main_stable">Stabilné Verzie</string>
+    <string name="txt_main_nightly">Nočné Verzie</string>
+    <string name="txt_main_license">Prémiová licencia ROM Manageru je potrebná pre povolenie tejto funkcie!</string>
+    <string name="txt_download_update_info">Informácie o Aktualizácii</string>
+    <string name="txt_download_old_version">Stará Verzia</string>
+    <string name="txt_download_new_version">Nová Verzia</string>
+    <string name="txt_download_download">Stiahnuť</string>
+</resources>
