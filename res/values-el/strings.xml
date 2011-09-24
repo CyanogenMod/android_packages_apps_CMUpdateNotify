@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">Ειδοποιήσεις ενημερώσεων CyanogenMod</string>
+    <string name="txt_register">Εγγραφή</string>
+    <string name="txt_unregister">Διαγραφή</string>
+    <string name="unknown">\?</string>
+
+    <!-- Notification -->
+    <string name="txt_notif_ticker">Υπάρχει διαθέσιμη ενημέρωση CyanogenMod</string>
+    <string name="txt_notif_title">Διαθέσιμη Ενημέρωση</string>
+    <string name="txt_notif_long">Είναι διαθέσιμη μία ενημέρωση για το CyanogenMod!</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">Ειδοποιήσεις Ενημερώσεων CyanogenMod</string>
+    <string name="txt_registration_success">Επιτυχία Εγγραφής</string>
+    <string name="txt_registration_failure">Αποτυχία Εγγραφής</string>
+    <string name="txt_unregistration_success">Επιτυχία Διαγραφής</string>
+    <string name="txt_unregistration_failure">Αποτυχία Διαγραφής</string>
+    <string name="txt_registering">Εγγραφή\u2026 Παρακαλώ Περιμένετε</string>
+    <string name="txt_unregistering">Διαγραφή\u2026 Παρακαλώ Περιμένετε</string>
+    <string name="txt_main_description">Για να ενεργοποιήσετε τις ειδοποιήσεις push για νέες εκδόσεις,
+        πρέπει να εγγραφείτε στους διακομιστές ενημερώσεων.</string>
+    <string name="txt_main_stable">Σταθερές Εκδόσεις</string>
+    <string name="txt_main_nightly">Nightly Builds</string>
+    <string name="txt_main_license">Χρειάζεστε το ROM Manager Premium για να ενεργοποιήσετε αυτό το χαρακτηριστικό!</string>
+
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">Πληροφορίες Αναβάθμισης</string>
+    <string name="txt_download_old_version">Παλαιά Έκδοση</string>
+    <string name="txt_download_new_version">Νέα Έκδοση</string>
+    <string name="txt_download_download">Λήψη</string>
+</resources>
