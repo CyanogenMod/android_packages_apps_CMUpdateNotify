@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">CyanogenMod更新提醒</string>
+    <string name="txt_register">注册</string>
+    <string name="txt_unregister">取消注册</string>
+    <string name="unknown" translatable="false">\?</string>
+
+    <!-- Notification -->
+    <string name="txt_notif_ticker">CyanogenMod更新可用</string>
+    <string name="txt_notif_title">更新可用</string>
+    <string name="txt_notif_long">一个CyanogenMod更新可用!</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">CyanogenMod更新提醒</string>
+    <string name="txt_registration_success">注册成功</string>
+    <string name="txt_registration_failure">注册失败</string>
+    <string name="txt_unregistration_success">成功取消注册</string>
+    <string name="txt_unregistration_failure">取消注册失败</string>
+    <string name="txt_registering">注册中...请稍后</string>
+    <string name="txt_unregistering">取消注册中...请稍后</string>
+    <string name="txt_main_description">要启用新版本的推送通知,您必须在更新服务器上注册您的设备.</string>
+    <string name="txt_main_stable">稳定/正式版</string>
+
+    <string name="txt_main_nightly">每日构建版</string>
+    <string name="txt_main_license">您需要安装ROM Manager Premium授权来启用此功能</string>
+
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">更新信息</string>
+    <string name="txt_download_old_version">旧版本</string>
+    <string name="txt_download_new_version">新版本</string>
+    <string name="txt_download_download">下载</string>
+</resources>
