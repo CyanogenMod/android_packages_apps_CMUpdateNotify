@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">CyanogenMod Güncelleme Bildirimleri</string>
+    <string name="txt_register">Kaydol</string>
+    <string name="txt_unregister">Kaydı Sil</string>
+    <string name="unknown">\?</string>
+    
+    <!-- Notification -->
+    <string name="txt_notif_ticker">CyanogenMod Güncellemesi Var</string>
+    <string name="txt_notif_title">Güncelleme Var</string>
+    <string name="txt_notif_long">Yeni bir CyanogenMod güncellemesi var!</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">CyanogenMod Güncelleme Bildirimleri</string>
+    <string name="txt_registration_success">Kayıt Başarılı</string>
+    <string name="txt_registration_failure">Kayıt Hatası</string>
+    <string name="txt_unregistration_success">Kayıt Kaldırıldı</string>
+    <string name="txt_unregistration_failure">Kayıt Kaldırılamadı</string>
+    <string name="txt_registering">Kayıt Yapılıyor\u2026 Lütfen Bekleyin</string>
+    <string name="txt_unregistering">Kayıt Siliniyor\u2026 Lütfen Bekleyin</string>
+    <string name="txt_main_description">Yeni sürüm bildirimlerini almak için
+    cihazınızı güncelleme sunucularıyla kayıt ettirmelisiniz.</string>
+    <string name="txt_main_stable">Kararlı Sürümler</string>
+    
+    <string name="txt_main_nightly">Günlük Sürümler</string>
+    <string name="txt_main_license">Bu özelliği etkinleştirmek için ROM Manager Premium lisansı gerekli!</string>
+    
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">Güncelleme Bilgisi</string>
+    <string name="txt_download_old_version">Eski Sürüm</string>
+    <string name="txt_download_new_version">Yeni Sürüm</string>
+    <string name="txt_download_download">İndir</string>
+</resources>
