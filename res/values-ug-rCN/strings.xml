@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">CyanogenMod يېڭىلاش ئۇقتۇرۇشلىرى</string>
+    <string name="txt_register">ﺧﻪﺗﻠﻪﺕ</string>
+    <string name="txt_unregister">خەتلەتمە</string>
+    <string name="unknown">\؟</string>
+    
+    <!-- Notification -->
+    <string name="txt_notif_ticker">CyanogenMod يېڭىلانما بار</string>
+    <string name="txt_notif_title">يېڭىلانما بار</string>
+    <string name="txt_notif_long">بىر CyanogenMod يېڭىلانما بار!</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">CyanogenMod يېڭىلاش ئۇقتۇرۇشلىرى</string>
+    <string name="txt_registration_success">خەتلەش مۇۋەپپەقىيەتلىك</string>
+    <string name="txt_registration_failure">خەتلىتەلمىدى</string>
+    <string name="txt_unregistration_success">خەتلەش مۇۋەپپەقىيەتلىك بىكار قىلىندى</string>
+    <string name="txt_unregistration_failure">خەتلەشنى بىكار قىلالمىدى</string>
+    <string name="txt_registering">خەتلەۋاتىدۇ\u2026 سەل كۈتۈڭ</string>
+    <string name="txt_unregistering">خەتلەشنى بىكار قىلىۋاتىدۇ\u2026 سەل كۈتۈڭ</string>
+    <string name="txt_main_description">يېڭى نەشرىنىڭ ئۇقتۇرۇشىنى ئەۋەتىشنى قوزغاتسىڭىز، چوقۇم يېڭىلاش مۇلازىمېتىرىدا ئۈسكۈنىڭىزنى خەتلىتىشىڭىز لازىم.</string>
+    <string name="txt_main_stable">مۇقىم تارقىتىلغان نەشرى</string>
+    
+    <string name="txt_main_nightly">كۈندىلىك ھاسىللىغان نەشرى</string>
+    <string name="txt_main_license">سىز ROM باشقۇرغۇچنىڭ ئالىي نەشرىنىڭ ئىجازىتىنى ئورنىتىپ ئاندىن بۇ ئىقتىدارنى قوزغىتالايسىز!</string>
+    
+    <!--  Download Activity -->
+    <string name="txt_download_update_info">يېڭىلاش ئۇچۇرى</string>
+    <string name="txt_download_old_version">كونا نەشرى</string>
+    <string name="txt_download_new_version">يېڭى نەشرى</string>
+    <string name="txt_download_download">چۈشۈر</string>
+</resources>
