@@ -4,7 +4,7 @@
     <string name="app_name">CyanogenMod更新提醒</string>
     <string name="txt_register">注册</string>
     <string name="txt_unregister">取消注册</string>
-    <string name="unknown" translatable="false">\?</string>
+    <string name="unknown">\?</string>
 
     <!-- Notification -->
     <string name="txt_notif_ticker">CyanogenMod更新可用</string>
