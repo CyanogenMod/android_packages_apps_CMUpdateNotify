@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Global -->
+    <string name="app_name">Obvestila o posodobitvah CyanogenMod</string>
+    <string name="txt_register">Prijava</string>
+    <string name="txt_unregister">Odjava</string>
+    <string name="unknown">\?</string>
+	
+	<!-- Notification -->
+    <string name="txt_notif_ticker">CyanogenMod posodobitev na voljo</string>
+    <string name="txt_notif_title">Posodobitev na voljo</string>
+    <string name="txt_notif_long">CyanogenMod posodobitev je na voljo!</string>
+	
+	<!-- Main Activity -->
+    <string name="title_main">CyanogenMod posodobitvena obvestila</string>
+    <string name="txt_registration_success">Prijava uspešna</string>
+    <string name="txt_registration_failure">Prijava neuspešna</string>
+    <string name="txt_unregistration_success">Odjava uspešna</string>
+    <string name="txt_unregistration_failure">Odjava neuspešna</string>
+    <string name="txt_registering">Prijavljam\u2026 Prosim počakaj</string>
+    <string name="txt_unregistering">Odjavljam\u2026 Prosim počakaj</string>
+    <string name="txt_main_description">Če želite omogočiti obvestila o novih izdajah, morate registrirati svojo napravo z posodobitvenim strežnikom.
+</string>
+    <string name="txt_main_stable">Stabilne izdaje</string>
+    <string name="txt_main_nightly">Nočne izdaje</string>
+    <string name="txt_main_license">ROM Manager Premium licenca je potrebna za dovoljenje te funkcije!</string>
+	
+	<!--  Download Activity -->
+    <string name="txt_download_update_info">Informacije o posodobitvah</string>
+    <string name="txt_download_old_version">Stara izdaja</string>
+    <string name="txt_download_new_version">Nova izdaja</string>
+    <string name="txt_download_download">Prenesi</string>
+</resources>
